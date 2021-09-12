@@ -1,8 +1,7 @@
-import { Link } from "react-router-dom"
 import {PrimeIcons} from 'primereact/api'
 
 const links = [
-    {url: 'http://github.com', icon: PrimeIcons.GITHUB}
+    {url: 'http://github.com/ap3tt1t', icon: PrimeIcons.GITHUB}
 ]
 
 const Footer = () => {
