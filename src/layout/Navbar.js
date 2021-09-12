@@ -1,6 +1,5 @@
 
 import { useHistory } from 'react-router-dom'
-import {Toolbar} from 'primereact/toolbar'
 import { Menubar } from 'primereact/menubar';
 
 const Navbar = () => {
