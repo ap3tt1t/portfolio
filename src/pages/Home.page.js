@@ -11,10 +11,10 @@ const Home = () => {
                     <span className="block text-6xl font-bold mb-1">React Developer</span>
                     <div className="text-6xl text-primary font-bold mb-3">Passionate about code</div>
                     <p className="mt-0 mb-4 text-700 line-height-3"></p>
-                    <Link to='/about' className='mr-3 p-button p-button-raised no-underline'>
+                    <Link to='/about' className='mr-3 p-button p-button-raised no-underline mb-2'>
                         <span className='p-button-label p-c'>Learn more</span>
                     </Link>
-                    <Link to='/contact' className='mr-3 p-button p-button-outlined no-underline'>
+                    <Link to='/contact' className='mr-3 p-button p-button-outlined no-underline mb-2'>
                         <span className='p-button-label p-c'>Contact me</span>
                     </Link>
                 </section>
