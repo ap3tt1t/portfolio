@@ -12,7 +12,6 @@ const Navbar = () => {
     ]
     return (
         <div className='pb-3'>
-            {/* <Toolbar left={NavbarTitle} right={<TabMenu model={model} style={{backgroundColor: '#f8f9fa'}}/>} className='border-0 surface-overlay py-3 px-3 shadow-2' /> */}
             <Menubar model={model} start={NavbarTitle} />
         </div>
     )
