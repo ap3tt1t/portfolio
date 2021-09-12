@@ -4,3 +4,31 @@ body {
     padding: 0;
     font-family: 'Merriweather', serif;
 }
+
+.timeline-events .custom-marker {
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border-radius: 50%;
+    z-index: 1;
+}
+.timeline-events .p-timeline-event-content {
+    line-height: 1;
+}
+@media screen and (max-width: 960px) {
+    .timeline-events .customized-timeline .p-timeline-event:nth-child(even) {
+        flex-direction: row !important;
+    }
+    .timeline-events .customized-timeline .p-timeline-event:nth-child(even) .p-timeline-event-content {
+        text-align: left !important;
+    }
+    .timeline-events .customized-timeline .p-timeline-event-opposite {
+        flex: 0;
+    }
+    .timeline-events .customized-timeline .p-card {
+        margin-top: 1rem;
+    }
+}

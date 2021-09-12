@@ -1,10 +1,14 @@
-import {useState} from 'react'
+import {useRef, useState} from 'react'
 import {InputText} from 'primereact/inputtext'
 import {InputTextarea} from 'primereact/inputtextarea'
 import {Button} from 'primereact/button'
 import { PrimeIcons } from 'primereact/api'
+import emailjs from 'emailjs-com'
+import { Messages } from 'primereact/messages';
 
 const Form = () => {
+    // REFERENCE
+    const messages = useRef(null)
     // STATE
     const [firstName, setFirstName] = useState('')
     const [surname, setSurname] = useState('')
@@ -12,14 +16,34 @@ const Form = () => {
     const [phone, setPhone] = useState('')
     const [message, setMessage] = useState('')
     // FUNCTIONS
-    const handleSubmit = (e) => {
+    const resetForm = () => {
+        setFirstName('')
+        setSurname('')
+        setEmail('')
+        setPhone('')
+        setMessage('')
+    }
+    const handleSubmit = async (e) => {
         e.preventDefault()
-        alert('Sending Email')
+        const params = {
+            firstName, surname, email, phone, message
+        }
+        emailjs
+        .send(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, params, process.env.REACT_APP_EMAILJS_USER_ID)
+        .then(response => {
+            messages.current.show({severity: 'success', detail: 'Email sent'})
+            resetForm()
+        }, (error) => {
+            messages.current.show({severity: 'failed', detail: error.text})
+        })
     }
     // RENDER
     return (
         <div>
             <form onSubmit={handleSubmit} className='p-fluid formgrid grid px-4 py-8 md:px-6 lg:px-8'>
+                <div className='field col-12'>
+                    <Messages ref={messages} /> 
+                </div>
                 <div className='field col-12 lg:col-6 p-float-label mb-4'>
                     <InputText placeholder='First Name' className='py-3 px-2 text-lg' value={firstName} onChange={e => setFirstName(e.target.value)} />
                 </div>

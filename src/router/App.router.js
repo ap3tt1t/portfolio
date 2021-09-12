@@ -8,22 +8,26 @@ import Layout from 'layout/Layout'
 // PAGES
 const Home = lazy(() => import('pages/Home.page'))
 const Contact = lazy(() => import('pages/Contact.page'))
+const About = lazy(() => import('pages/About.page'))
+
 // RENDER
 const App = () => {
     return (
-        <Suspense fallback={<Loading />}>
+        
             <Router>
                 <Layout>
-                    <Switch>
-                        <Route exact path='/' component={Home} />
-                        <Route path='/about'>About</Route>
-                        <Route path='/projects'>Projects</Route>
-                        <Route path='/contact' component={Contact} />
-                        <Route>404</Route>
-                    </Switch>
+                <Suspense fallback={<Loading />}>
+                        <Switch>
+                            <Route exact path='/' component={Home} />
+                            <Route path='/about' component={About} />
+                            <Route path='/projects'>Projects</Route>
+                            <Route path='/contact' component={Contact} />
+                            <Route>404</Route>
+                        </Switch>
+                    </Suspense>
                 </Layout>
             </Router>
-        </Suspense>
+        
     )
 }
 
