@@ -9,6 +9,7 @@ import Layout from 'layout/Layout'
 const Home = lazy(() => import('pages/Home.page'))
 const Contact = lazy(() => import('pages/Contact.page'))
 const About = lazy(() => import('pages/About.page'))
+const Projects = lazy(() => import('pages/Projects.page'))
 
 // RENDER
 const App = () => {
@@ -20,7 +21,7 @@ const App = () => {
                         <Switch>
                             <Route exact path='/' component={Home} />
                             <Route path='/about' component={About} />
-                            <Route path='/projects'>Projects</Route>
+                            <Route path='/projects' component={Projects} />
                             <Route path='/contact' component={Contact} />
                             <Route>404</Route>
                         </Switch>
