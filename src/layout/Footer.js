@@ -1,4 +1,3 @@
-import {PrimeIcons} from 'primereact/api'
 // ASSETS
 import {FiGithub, FiLinkedin} from 'react-icons/fi'
 
