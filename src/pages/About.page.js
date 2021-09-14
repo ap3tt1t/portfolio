@@ -1,20 +1,22 @@
 // COMPONENTS
 import AboutMe from "components/about/AboutMe"
 import Events from "components/about/Events"
-import TechStack from "components/about/TechStack"
+import Skills from "components/about/Skills"
 
 const About = () => {
     return (
         <div className='grid'>
-            <div className='col-12 lg:col-6 p-5'>
-                <h3 className='text-center'>About me</h3>
-                <AboutMe />
-                <hr />
-                <h2 className='text-center'>Tech Stack</h2>
-                <TechStack />
+            <div className='col-12'>
+                <h3 className='text-center'>About me</h3>       
             </div>
-            <div className='col-12 lg:col-6 p-5'>
+            <div className='col-12 lg:col-8 mx-auto mb-3'>
+                <AboutMe />
+            </div>
+            <div className='col-12 lg:col-8 mx-auto'>
                 <Events />
+            </div>
+            <div className='col-12 lg:col-8 mx-auto'>
+                <Skills />
             </div>
         </div>
     )
