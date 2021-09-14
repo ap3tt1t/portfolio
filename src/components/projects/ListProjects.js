@@ -44,7 +44,7 @@ const projects = [
 const ListProjects = () => {
     return (
         <div className='grid grid-nogutter'>
-            {projects.map(project => <Project key={project.name} project={project} />)}
+            {projects.map(project => <Project key={project.title} project={project} />)}
         </div>
     )
 }

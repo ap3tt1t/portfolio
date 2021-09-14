@@ -16,7 +16,7 @@ const Project = ({project}) => {
                     </div>
                     <div className='col-12 lg:col-6 l-1'>
                         <Card title={project.title} subTitle={project.blurb} style={{height: '100%'}} footer={footer}>
-                            {project.stack.map(tech => <Chip label={tech} className='mr-2 mb-2' />)}
+                            {project.stack.map(tech => <Chip key={tech} label={tech} className='mr-2 mb-2' />)}
                         </Card>
                     </div>
                 </div>
