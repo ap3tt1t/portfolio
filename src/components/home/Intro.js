@@ -8,7 +8,7 @@ const Intro = () => (
         Last year I built and ERP (Enterprise Resource Planning) for my company's branch that I have
         used to automate inventory, cusomter and invoicing managerment and deliveries which has saved me 
         more than 20 hours of work a month. It currently has over 90 clients loaded onto the system.
-        I have a also written a React-Hooks library and published it to NPM.
+        I have also written a React-Hooks library and published it to NPM.
         </p>
         <p>
         I have 2 years experience as a Technical Sales and Support Engineer but I am now looking to pivot
