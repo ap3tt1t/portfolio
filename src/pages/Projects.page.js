@@ -3,7 +3,7 @@ import ListProjects from "components/projects/ListProjects"
 const Projects = () => {
     return (
         <div className=''>
-            <h2 className='text-center'>Portfolio</h2>
+            <h3 className='text-center'>Portfolio</h3>
             <ListProjects />
         </div>
     )

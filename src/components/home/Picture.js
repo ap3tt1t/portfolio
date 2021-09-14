@@ -2,9 +2,9 @@
 import PersonalImage from 'assets/personal.jpg'
 
 const Picture = () => (
-    <div className='col-12 lg:col-6 p-1 lg:p-3'>
+    <div className='col-12 lg:col-6 p-1 lg:p-3' style={{gridAutoFlow: 'column'}}>
         <div className='surface-card p-4 shadow-2 border-round flex justify-content-center'>
-            <img src={PersonalImage} className='border-circle' height='300px' alt="Andrew Pettit" />
+            <img src={PersonalImage} className='border-circle' height='200px' alt="Andrew Pettit" />
         </div>
     </div>
 )

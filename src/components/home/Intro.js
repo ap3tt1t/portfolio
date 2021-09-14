@@ -6,7 +6,7 @@ const Intro = () => (
         I learned to code using various courses on Udemy and YouTube, and I have built several side
         projects to gain practical experience.
         Last year I built and ERP (Enterprise Resource Planning) for my company's branch that I have
-        used to automate inventory, cusomter and invoicing managerment and deliveries which has saved me 
+        used to automate inventory, cusomter and invoicing management and deliveries which has saved me 
         more than 20 hours of work a month. It currently has over 90 clients loaded onto the system.
         I have also written a React-Hooks library and published it to NPM.
         </p>
