@@ -9,7 +9,7 @@ import Email from 'components/home/Email'
 const Home = () => {
     return (
         <div className='lg:m-8'>
-            <div className="grid grid-nogutter surface-section text-800 m-3">
+            <div className="grid surface-section text-800 m-3">
                 <Opening />
                 <Picture />
             </div>

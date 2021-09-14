@@ -16,7 +16,7 @@ const TechStack = () => {
 const Tech = ({tech}) => {
     const header = <img src={tech.logo} alt={tech.name} />
     return (
-        <div className='col-4 md:col-3 lg:col-2 xl:col-1 p-3 surface-card w-auto'>
+        <div className='col-4 md:col-3 lg:col-2 xl:col-1 p-3 surface-card w-auto mx-auto'>
             <Card title={tech?.name} header={header}>
                 <Rating value={tech.rating} readOnly disabled stars={5} cancel={false} />
             </Card>
