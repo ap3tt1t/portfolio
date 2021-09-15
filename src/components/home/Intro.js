@@ -2,7 +2,7 @@ const Intro = () => (
     <div className='col-12 surface-card p-4 shadow-2 border-round'>
         <p>
         I am a self-taught software developer speciailising in React and Node.js 
-        with two years of coding experience.
+        with two years of personal coding experience.
         I learned to code using various courses on Udemy and YouTube, and I have built several side
         projects to gain practical experience.
         Last year I built and ERP (Enterprise Resource Planning) for my company's branch that I have

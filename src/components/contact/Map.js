@@ -7,7 +7,7 @@ const Map = () => {
             <div className='text-white text-2xl font-medium mb-6'>Contact Me</div>
             <div className='text-gray-300 line-height-3 mb-6'>
                 <i className={`${PrimeIcons.MAP_MARKER} mr-2`} />
-                <span>Stellenbosch, South Africa</span>
+                <span><a className='no-underline text-white' target='_blank noref' href='https://goo.gl/maps/3KS7bkZZnGAvA8By6'>Stellenbosch, South Africa</a></span>
             </div>
             <ul className='list-none p-0 m-0 mt-6 text-white'>
                 <li className='flex align-items-center mb-3'>
