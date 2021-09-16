@@ -12,14 +12,15 @@ const projects = [
     {
         title: '#LightSARed Campaign',
         blurb: `"The South African events industry is dying, and we are being ignored" - a country wide campaign to highlight 
-        the plight of the events industry in South Africa during the COVID-19 Pandemic`,
+        the plight of the events industry in South Africa during the COVID-19 Pandemic. I built this website to aid my fellow industry
+        workers list the locations of where they planned to stage their 'protest' of not being allowed to work due to the COVID-19 Pandemic`,
         link: 'https://www.lightsared.org.za',
         image: LIGHTSARED,
         stack: ['React', 'Node.JS', 'MonogDB', 'Express', 'Heroku']
     },
     {
         title: 'DWR Distribution Cape Town ERP',
-        blurb: `Designed to fill the gap in the fact that the DWR Distribution Cape Town branch does not have access to the companies ERP system. This system 
+        blurb: `I designed and built this system to fill the gap in the fact that the DWR Distribution Cape Town branch does not have access to the companies ERP system. This system 
         is able to keep track of all customers within the Cape Town and Western Cape Region, including contact details and addresses. Product information and pricing
         is also kept on the system with Excel import funcionality to allow speedy updating of multiple product prices at once. Quotes can be generated using products in the
         inventory and then converted to delivery notes for the customer to sign digitally upon recieving of their goods. PDF Printing of Quotes and Delivery Notes is also a feature.
