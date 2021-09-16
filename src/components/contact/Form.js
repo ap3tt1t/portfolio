@@ -34,24 +34,27 @@ const Form = () => {
         }
     }
     const onExpire = () => {
-        setIsHuman(false)
-        
+        setIsHuman(false)  
     }
     const handleSubmit = async (e) => {
         e.preventDefault()
         const params = {
             firstName, surname, email, phone, message
         }
-        if (!isHuman) return null
-        else 
-        emailjs
+        if (!isHuman) {
+            messages.current.show({severity: 'error', detail: 'Captcha not completed'})
+        }
+        else {
+            emailjs
             .send(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, params, process.env.REACT_APP_EMAILJS_USER_ID)
             .then(() => {
                 messages.current.show({ severity: 'success', detail: 'Email sent' })
                 resetForm()
             }, (error) => {
-                messages.current.show({ severity: 'failed', detail: error.text })
+                messages.current.show({ severity: 'error', detail: error.text })
             })
+        }
+        
     }
     // RENDER
     return (
