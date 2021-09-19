@@ -5,7 +5,7 @@ const Intro = () => (
         with two years of personal coding experience.
         I learned to code using various courses on Udemy and YouTube, and I have built several side
         projects to gain practical experience.
-        Last year I built an ERP (Enterprise Resource Planning) for my company's branch that we have
+        Last year I built an ERP (Enterprise Resource Planning) System for my company's branch that we have
         used to automate inventory, customer and invoicing management and deliveries which has saved us 
         many hours of work a month. It currently has over 90 clients loaded onto the system.
         I have also written a React-Hooks library and published it to NPM.
